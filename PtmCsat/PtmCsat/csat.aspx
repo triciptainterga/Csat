@@ -5,240 +5,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pertamina Customer Satisfaction</title>
+    <title>Customer Satisfaction Survey</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="js/index_act.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/index_act.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
     <style>
+        label, h1 {
+            color: white !important;
+            font-weight: bold;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-        }
-        header {
-            background: #50b3a2;
-            color: #fff;
-            padding-top: 20px;
-            min-height: 50px;
-            border-bottom: #0e29d5 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            float: left;
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
-            margin: 0;
-        }
-        header nav {
-            float: right;
-            margin-top: 10px;
-        }
-        section {
-            padding: 20px;
-            margin: 20px 0;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        footer {
-            background: #50b3a2;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-            margin-top: 20px;
-        }
-        .form-group {
-            margin-bottom: 15px;
-        }
-        .form-group label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        .form-group input, .form-group textarea, .form-group select {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        .form-group button {
-            background: #50b3a2;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
-        .form-group button:hover {
-            background: #45a091;
-        }
-		.image-container {
+            background-image: url("images/background biru.jpg");
+            background-size: cover;
+            /* Gambar mengisi penuh */
+            background-repeat: no-repeat;
+            /* Tidak diulang */
+            background-position: center;
+            /* Posisi tengah */
+            background-attachment: fixed;
+            /* Tetap saat scroll */
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
             display: flex;
-            gap: 10px;
-            justify-content: left;
-            margin-left: 20px;
+            flex-direction: column;
         }
-        .image-container img {
-            width: 64px;
-            height: 64px;
-            border: 4px solid transparent;
-            cursor: pointer;
-            transition: transform 0.3s ease, border-color 0.3s ease;
+
+        .main-content {
+            flex-grow: 1;
         }
-        .image-container img:hover {
-            transform: scale(1.1);
+
+        .star-rating i {
+            font-size: 1.5rem;
+            color: #ffc107;
         }
-        .image-container img.selected {
-            border-color: #50b3a2; /* Border color when selected */
-        }
-        /* CSS untuk overlay */
-        .overlay {
-            display: none; /* Mulai dengan disembunyikan */
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5); /* Warna hitam dengan transparansi */
-            z-index: 9999; /* Pastikan di atas elemen lain */
-            text-align: center;
-            padding-top: 20%;
+
+        .contact-info {
             color: white;
-            font-size: 24px;
+            font-size: 0.875rem;
+        }
+
+            .contact-info p {
+                margin-bottom: 0.3rem;
+            }
+
+        .bg-white {
+            background-color: #fff !important;
+        }
+
+        .star-rating-container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px 30px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+            .star-rating-container i {
+                font-size: 4.5rem; /* Besar: 40px */
+                color: #FFD700; /* Warna kuning terang */
+            }
+
+        .star-label {
+            margin-top: 18px;
+            font-size: 1.2rem;
+            color: blue;
+            text-align: center;
+            line-height: 1.1;
+            word-wrap: break-word;
+        }
+
+        .rating-result {
+            margin-top: 10px;
+            font-weight: bold;
+            color: white;
+            text-align: center;
         }
     </style>
-	<script>
+    <script>
         function selectImage(img) {
             // Remove 'selected' class from all images
             var images = document.querySelectorAll('.image-container img');
-            images.forEach(function(image) {
+            images.forEach(function (image) {
                 image.classList.remove('selected');
             });
-            
+
             // Add 'selected' class to the clicked image
             img.classList.add('selected');
-            
+
             // Get the value of the selected image
             var selectedValue = img.getAttribute('data-value');
             console.log('Selected Image Value:', selectedValue);
-			$("#resultCSAT").val(selectedValue);
+            $("#resultCSAT").val(selectedValue);
         }
     </script>
-	<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
     <div class="overlay">Processing...</div>
-    <header>
+    <%--<header>
         <div class="container">
             <div id="branding">
-                <h1>Sibernet Customer Satisfaction</h1>
+                <h1>Pertamina Customer Satisfaction</h1>
             </div>
-           
+
         </div>
-    </header>
+    </header>--%>
 
-    <section id="survey" class="container">
-        <h2>Customer Satisfaction Survey</h2>
-        <form runat="server">
-		<input type="hidden" id="resultCSAT" name="resultCSAT" >
-        <asp:HiddenField  ID="UniqueID" runat="server"></asp:HiddenField>
 
-            <div class="form-group">
-                <label for="name">Ticket Number:</label>
-                <input type="text" id="ticketnumber" name="ticketnumber" readonly>
-            </div>
-            <div class="form-group">
-                <label for="Channel">Channel:</label>
-                <input type="text" id="channelname" name="channelname" readonly>
-            </div>
-            <!--<div class="form-group">
-                <label for="satisfaction">Satisfaction Level:</label>
-                <select id="satisfaction" name="satisfaction" required>
-                    
-                    <option value="satisfied">Satisfied</option>
-                    <option value="neutral">Neutral</option>
-                    <option value="dissatisfied">Dissatisfied</option>
-                   
-                </select>
-            </div>-->
-			<div class="form-group">
-			<label for="satisfaction">Satisfaction Level:</label>
-				<!--<div class="row">
-					
-					
-					<div class="col-xs-4 col-sm-4 col-md-4">
-						<div class="image-container">
-						<img src="images/puas.png" width="64" onclick="selectImage('Satisfied')">
-						</div>
-					</div>
-					<div class="col-xs-4 col-sm-4 col-md-4">
-						<div class="image-container">
-						<img src="images/biasa.png" width="64" onclick="selectImage('Neutral')">
-						</div>
-					</div>
-					<div class="col-xs-4 col-sm-4 col-md-4">
-						<div class="image-container">
-						<img src="images/kecewa.png" width="64" onclick="selectImage('Dissatisfied')">
-						</div>
-					</div>
-				</div>-->
-				
-				<div class="row">
-					<div class="col-12">
-						<div class="image-container">
-							<img src="images/puas.png" alt="Sample Image 1" data-value="Satisfied" onclick="selectImage(this)">
-							<img src="images/biasa.png" alt="Sample Image 2" data-value="Neutral" onclick="selectImage(this)">
-							<img src="images/kecewa.png" alt="Sample Image 3" data-value="Dissatisfied" onclick="selectImage(this)">
-						</div>
-					</div>
-				</div>
-            </div>
-            <div class="form-group">
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="4" required></textarea>
-            </div>
-            <div class="form-group">
-                <a href="#" class="btn btn-success" id="startProcess">Submit</a>
-            </div>
-        </form>
-    </section>
+    <div class="main-content d-flex flex-column justify-content-center py-4">
+        <div class="container">
+            <h1 class="text-white text-center mb-4 h2" style="font-weight: bold;">Survey Kepuasan Pelanggan</h1>
+            <form class="mx-auto" style="max-width: 500px; margin-left: 25%" runat="server">
+                <!-- Hidden Fields -->
+                <input type="hidden" id="resultCSAT" name="resultCSAT" />
+                <asp:HiddenField ID="UniqueID" runat="server" />
 
-    <!--<section id="testimonials" class="container">
-        <h2>Customer Testimonials</h2>
-        <p>"Excellent service, very satisfied!" - John Doe</p>
-        <p>"Good quality products, will buy again." - Jane Smith</p>
-        <p>"Friendly customer support and quick delivery." - Alan Brown</p>
-    </section>-->
+                <!-- Ticket Number -->
+                <div id="Ticket" class="form-group">
+                    <label for="ticketnumber" class="fw-bold">Ticket Number:</label>
+                    <input type="text"
+                        id="ticketnumber"
+                        name="ticketnumber"
+                        class="form-control"
+                        readonly />
+                </div>
 
-    <section id="contact" class="container">
-        <h2>Contact Us</h2>
-        <p>If you have any questions or concerns, please contact us at:</p>
-        <p>Email: info@Pertaina.co.id</p>
-       
-    </section>
 
-    <footer>
-        <p>Pertamina &copy; 2024</p>
-    </footer>
+                <!-- Channel Name -->
+                <div id="Kanal" class="form-group">
+                    <label for="channelname">Channel:</label>
+                    <input type="text" id="channelname" name="channelname" class="form-control" readonly />
+                </div>
+
+                <!-- Star Rating -->
+                <!-- Rating Bintang -->
+                <!-- Rating Bintang -->
+                <div class="form-group mb-4">
+                    <label class="form-label text-white fw-bold">Rating Kepuasan:</label>
+                    <div class="star-rating-container" id="starRating">
+                        <div class="star-item" data-value="1">
+                            <i class="fas fa-star"></i>
+                            <div class="star-label">Sangat<br>
+                                Tidak Puas</div>
+                        </div>
+                        <div class="star-item" data-value="2">
+                            <i class="fas fa-star"></i>
+                            <div class="star-label">Tidak<br>
+                                Puas</div>
+                        </div>
+                        <div class="star-item" data-value="3">
+                            <i class="fas fa-star"></i>
+                            <div class="star-label">Cukup<br>
+                                Puas</div>
+                        </div>
+                        <div class="star-item" data-value="4">
+                            <i class="fas fa-star"></i>
+                            <div class="star-label">Puas</div>
+                        </div>
+                        <div class="star-item" data-value="5">
+                            <i class="fas fa-star"></i>
+                            <div class="star-label">Sangat<br>
+                                Puas</div>
+                        </div>
+                    </div>
+                    <input type="hidden" id="ratingValue" value="0">
+                    <div class="rating-result" id="ratingResult"></div>
+                </div>
+
+
+
+
+                <!-- Comment -->
+                <div class="form-group">
+                    <label for="comments" class="form-label">Komentar:</label>
+                    <textarea class="form-control" id="comments" name="comments" rows="4" placeholder="Tulis komentar Anda..." required></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group text-start">
+                    <button type="submit" class="btn btn-primary btn-sm px-4" id="startProcess">Submit</button>
+                </div>
+
+                <div class="row">
+                    <!-- Kolom kiri: teks kontak -->
+                    <div class="col-md-9 col-12 text-white">
+                        <div id="contact" class="contact-info mt-4" style="max-width: 700px; margin: 0 auto;">
+                        </div>
+                    </div>
+
+                    <!-- Kolom kanan: logo -->
+                    <div class="col-md-3 col-12 text-md-end text-center">
+                        <img src="images/logo-cc135.png" alt="Logo Pertamina"
+                            style="width: 120px; height: 120px; object-fit: contain;">
+                    </div>
+                </div>
+                 </form>
+        </div>
+    
+    
+    </div>
+
+   
+
+
+     
+
+   
+   
+
 </body>
 </html>
 
