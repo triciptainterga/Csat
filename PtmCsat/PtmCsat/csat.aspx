@@ -218,27 +218,5 @@
             </div>
 
     </body>
-    <script>
-        $(document).ready(function () {
-            $('.star-item').on('click', function () {
-                var selectedValue = $(this).data('value');
-                $('#ratingValue').val(selectedValue);
-                $('#resultCSAT').val(selectedValue); // agar hidden field ikut update
-                $('#ratingResult').text('Rating Anda: ' + selectedValue);
-
-                // Reset semua bintang
-                $('.star-item i').css('color', '#ccc');
-
-                // Warnai bintang yang dipilih dan sebelumnya
-                $('.star-item').each(function () {
-                    var starValue = $(this).data('value');
-                    if (starValue <= selectedValue) {
-                        $(this).find('i').css('color', '#FFD700'); // Warna kuning
-                    }
-                });
-            });
-        });
-    </script>
-
 
     </html>
