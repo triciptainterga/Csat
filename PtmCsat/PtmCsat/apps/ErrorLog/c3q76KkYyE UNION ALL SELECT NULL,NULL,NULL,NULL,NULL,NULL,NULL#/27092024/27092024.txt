@@ -1,0 +1,20 @@
+Time: 27/09/2024 01:41:46:112 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT 'c3q76KkYyE UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#', '20240906022305354', 'Email', 'Neutral'
+---------------------------Success-------------------------------------------------------
+
+Time: 27/09/2024 01:42:14:299 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT 'c3q76KkYyE UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#', '20240906022305354', 'Email', 'Neutral'
+---------------------------Success-------------------------------------------------------
+
+Time: 27/09/2024 01:46:33:676 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT 'c3q76KkYyE UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#', '20240906022305354', 'Email', 'Neutral'
+---------------------------Success-------------------------------------------------------
+
+Time: 27/09/2024 01:46:59:661 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT 'c3q76KkYyE UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL,NULL#', '20240906022305354', 'Email', 'Neutral'
+---------------------------Success-------------------------------------------------------
+

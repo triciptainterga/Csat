@@ -1,0 +1,5 @@
+Time: 27/09/2024 11:09:24:516 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT ''%20UNION%20select%20table_schema,table_name%20FROM%20information_Schema%2etables%3b%23', ''%20UNION%20select%20table_schema,table_name%20FROM%20information_Schema%2etables%3b%23', ''%20UNION%20select%20table_schema,table_name%20FROM%20information_Schema%2etables%3b%23', ''%20UNION%20select%20table_schema,table_name%20FROM%20information_Schema%2etables%3b%23'
+---------------------------Success-------------------------------------------------------
+

@@ -109,7 +109,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-    <div class="overlay">Processing...</div>
     <%--<header>
         <div class="container">
             <div id="branding">
@@ -120,16 +119,16 @@
     </header>--%>
 
 
-    <div class="main-content d-flex flex-column justify-content-center py-4">
+    <div class="main-content d-flex flex-column justify-content-center py-8">
         <div class="container">
-            <h1 class="text-white text-center mb-4 h2" style="font-weight: bold;">Survey Kepuasan Pelanggan</h1>
+            <h1 class="text-white text-center mb-4 h2" style="font-weight: bold;margin-top:15%">Survey Kepuasan Pelanggan</h1>
             <form class="mx-auto" style="max-width: 500px; margin-left: 25%" runat="server">
                 <!-- Hidden Fields -->
                 <input type="hidden" id="resultCSAT" name="resultCSAT" />
                 <asp:HiddenField ID="UniqueID" runat="server" />
 
                 <!-- Ticket Number -->
-                <div id="Ticket" class="form-group">
+                <div id="Ticket" class="form-group" style="display: none;">
                     <label for="ticketnumber" class="fw-bold">Ticket Number:</label>
                     <input type="text"
                         id="ticketnumber"
@@ -140,46 +139,43 @@
 
 
                 <!-- Channel Name -->
-                <div id="Kanal" class="form-group">
+                <div id="Kanal" class="form-group" style="display: none;">
                     <label for="channelname">Channel:</label>
                     <input type="text" id="channelname" name="channelname" class="form-control" readonly />
                 </div>
 
                 <!-- Star Rating -->
-                <!-- Rating Bintang -->
-                <!-- Rating Bintang -->
-                <div class="form-group mb-4">
-                    <label class="form-label text-white fw-bold">Rating Kepuasan:</label>
-                    <div class="star-rating-container" id="starRating">
-                        <div class="star-item" data-value="1">
-                            <i class="fas fa-star"></i>
-                            <div class="star-label">Sangat<br>
-                                Tidak Puas</div>
+                        <div class="form-group mb-4">
+                            <label class="form-label text-white fw-bold">Rating Kepuasan:</label>
+                            <div class="star-rating-container" id="starRating">
+                                <div class="star-item" data-value="1">
+                                    <i class="fas fa-star"></i>
+                                    <div class="star-label">Sangat<br>
+                                        Tidak Puas</div>
+                                </div>
+                                <div class="star-item" data-value="2">
+                                    <i class="fas fa-star"></i>
+                                    <div class="star-label">Tidak<br>
+                                        Puas</div>
+                                </div>
+                                <div class="star-item" data-value="3">
+                                    <i class="fas fa-star"></i>
+                                    <div class="star-label">Cukup<br>
+                                        Puas</div>
+                                </div>
+                                <div class="star-item" data-value="4">
+                                    <i class="fas fa-star"></i>
+                                    <div class="star-label">Puas</div>
+                                </div>
+                                <div class="star-item" data-value="5">
+                                    <i class="fas fa-star"></i>
+                                    <div class="star-label">Sangat<br>
+                                        Puas</div>
+                                </div>
+                            </div>
+                            <input type="hidden" id="ratingValue" value="0">
+                            <div class="rating-result" id="ratingResult"></div>
                         </div>
-                        <div class="star-item" data-value="2">
-                            <i class="fas fa-star"></i>
-                            <div class="star-label">Tidak<br>
-                                Puas</div>
-                        </div>
-                        <div class="star-item" data-value="3">
-                            <i class="fas fa-star"></i>
-                            <div class="star-label">Cukup<br>
-                                Puas</div>
-                        </div>
-                        <div class="star-item" data-value="4">
-                            <i class="fas fa-star"></i>
-                            <div class="star-label">Puas</div>
-                        </div>
-                        <div class="star-item" data-value="5">
-                            <i class="fas fa-star"></i>
-                            <div class="star-label">Sangat<br>
-                                Puas</div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="ratingValue" value="0">
-                    <div class="rating-result" id="ratingResult"></div>
-                </div>
-
 
 
 

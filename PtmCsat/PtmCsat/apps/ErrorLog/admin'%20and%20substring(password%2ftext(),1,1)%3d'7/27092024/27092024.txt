@@ -1,0 +1,5 @@
+Time: 27/09/2024 11:09:24:516 AM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT 'admin'%20and%20substring(password%2ftext(),1,1)%3d'7', 'admin'%20and%20substring(password%2ftext(),1,1)%3d'7', 'admin'%20and%20substring(password%2ftext(),1,1)%3d'7', 'admin'%20and%20substring(password%2ftext(),1,1)%3d'7'
+---------------------------Success-------------------------------------------------------
+

@@ -1,0 +1,5 @@
+Time: 27/09/2024 01:45:29:957 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT '9Onc2H7VKj) WAITFOR DELAY CHAR(48)+CHAR(58)+CHAR(48)+CHAR(58)+CHAR(91)+CHAR(83)+CHAR(76)+CHAR(69)+CHAR(69)+CHAR(80)+CHAR(84)+CHAR(73)+CHAR(77)+CHAR(69)+CHAR(93) AND (6082=6082', '20240906022305353', 'Email', 'Satisfied'
+---------------------------Success-------------------------------------------------------
+

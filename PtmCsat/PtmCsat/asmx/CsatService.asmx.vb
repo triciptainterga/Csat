@@ -232,6 +232,36 @@ Public Class CsatService
     End Function
     <WebMethod(EnableSession:=True)>
     <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
+    Public Function GetCsatContent(ByVal TicketNumber As String) As String
+        Dim connstring As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
+        Dim dt As DataTable = New DataTable()
+        Dim NameSP As String = "Exec SP_Get_CSAT_Contact"
+        Dim sql As String = "" & NameSP & " '" & TicketNumber & "'"
+        Try
+            Using conn As SqlConnection = New SqlConnection(connstring)
+                conn.Open()
+                Dim sqlComm As SqlCommand = New SqlCommand("SP_Get_CSAT_Contact", conn)
+                sqlComm.Parameters.AddWithValue("@TicketNumber", TicketNumber)
+
+                sqlComm.CommandType = CommandType.StoredProcedure
+                Dim da As SqlDataAdapter = New SqlDataAdapter()
+                Dim ds As DataSet = New DataSet()
+                da.SelectCommand = sqlComm
+                da.Fill(ds)
+                dt = ds.Tables(0)
+                conn.Close()
+            End Using
+        Catch ex As Exception
+            LogError(TicketNumber, ex, sql)
+        Finally
+            LogSuccess(TicketNumber, sql)
+        End Try
+        Dim tableJson As String = BigConvertDataTabletoString(dt)
+        Return tableJson
+    End Function
+
+    <WebMethod(EnableSession:=True)>
+    <ScriptMethod(UseHttpGet:=False, ResponseFormat:=ResponseFormat.Json)>
     Public Function ws_csat_create(ByVal UniqueID As String, ByVal TicketNumber As String, ByVal Channel As String, ByVal ResultCSAT As String, ByVal IsiKeterangan As String, ByVal UserName As String) As String
         Dim connstring As String = ConfigurationManager.ConnectionStrings("DefaultConnection").ConnectionString
         Dim dt As DataTable = New DataTable()

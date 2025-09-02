@@ -1,33 +1,37 @@
 $(document).ready(function () {
+	  $("#resultCSAT").val('Sangat Puas');
+			
+        // === SET NILAI DARI URL ===
+    if (getParameterByName("ticid") == null || getParameterByName("kanal") == null )
+            window.location = "Error.html";
 
+    // Cek kanal yang valid
+    const allowedChannels = ["Email", "Voice", "Live Chat"];
+    let status = allowedChannels.includes(getParameterByName("kanal"));
 
-    if (getParameterByName("ticid") == null)
+    // Jika kanal tidak valid, redirect ke Error.html
+    if (!status) {
         window.location = "Error.html";
-
-    $("#channelname").val(getParameterByName("kanal"))
-    $("#ticketnumber").val(getParameterByName("ticid"))
-
-    $.ajax({
-        type: "POST",
-        url: "asmx/CsatService.asmx/GetCsatContent",
-        data: JSON.stringify({ 'TicketNumber': getParameterByName("ticid") }),
-        contentType: "application/json; charset=utf-8",
-        dataType: "json",
-        success: function (data) {
-            var json = JSON.parse(data.d);
-            // alert(json)
-            var i, x, result = "";
-            console.log(json);
-
-            if (json.length > 0) {
-                for (i = 0; i < json.length; i++) {
+    }
 
 
+    
+        $("#channelname").val(getParameterByName("kanal"));
+        $("#ticketnumber").val(getParameterByName("ticid"));
+
+        // === GET CONTACT DARI ASMX ===
+        $.ajax({
+            type: "POST",
+            url: "asmx/CsatService.asmx/GetCsatContent",
+            data: JSON.stringify({ 'TicketNumber': getParameterByName("ticid") }),
+            contentType: "application/json; charset=utf-8",
+            dataType: "json",
+            success: function (data) {
+                var json = JSON.parse(data.d);
+                if (json.length > 0) {
                     var _contact = `
-				
-				<p>${json[0].Header}</p>
-				<p>${json[0].Contact_As}</p>`;
-
+                        <p>${json[0].Header}</p>
+                        <p>${json[0].Contact_As}</p>`;
                     $('#contact').html(_contact);
 
                     if (json[0].TenantID == '4') {
@@ -37,231 +41,159 @@ $(document).ready(function () {
                         $('#Ticket').show();
                         $('#Kanal').show();
                     }
+                } else {
+                    Swal.fire({
+                        text: 'No Ticket tidak terdaftar.',
+                        icon: 'warning'
+                    }).then(() => {
+                        window.location = "Error.html";
+                    });
                 }
-            } else {
-                Swal.fire({
-                    title: '',
-                    text: 'No Ticket tidak terdaftar.',
-                    icon: 'warning'
-                }).then(() => {
-                    window.location = "Error.html";
-                });
-
+            },
+            error: function (xhr, status, err) {
+                hideOverlay();
+                console.log(xhr.responseText);
             }
-               
-
-
-
-        },
-        error: function (xmlHttpRequest, textStatus, errorThrown) {
-            hideOverlay();
-            console.log(xmlHttpRequest.responseText);
-            console.log(textStatus);
-            console.log(errorThrown);
-        }
-    })
-
-    csatInitiate(getParameterByName("ticid"), getParameterByName("kanal"));
-    //fetch('contact.json')
-    //    .then(response => response.json())
-    //    .then(data => {
-    //        var _contact = `
-    //<h2>Contact Us</h2>
-    //<p>If you have any questions or concerns, please contact us at:</p>
-    //<p>Email: ${data.email}</p>
-    //<p>Address: ${data.address}, ${data.city}, ${data.postal_code}</p>
-    //<p>${data.country}</p>`;
-
-    //        $('#contact').html(_contact);
-    //    })
-    //    .catch(error => console.error('Error:', error));
-
-
-
-
-
-    const stars = document.querySelectorAll('#starRating i');
-    const result = document.getElementById('ratingResult');
-
-    const ratings = {
-        1: "Sangat Tidak Puas",
-        2: "Tidak Puas",
-        3: "Cukup Puas",
-        4: "Puas",
-        5: "Sangat Puas"
-    };
-
-    stars.forEach((star, index) => {
-        star.addEventListener('click', () => {
-            const value = index + 1;
-
-            // Reset warna bintang
-            stars.forEach(s => s.classList.remove('selected'));
-
-            // Tambahkan warna pada bintang yang diklik dan sebelumnya
-            for (let i = 0; i < value; i++) {
-                stars[i].classList.add('selected');
-            }
-
-            // Tampilkan hasil rating
-            result.textContent = `${value} Bintang - ${ratings[value]}`;
         });
-    });
 
+        // === INIT CSAT ===
+        csatInitiate(getParameterByName("ticid"), getParameterByName("kanal"));
 
+        // === LOGIKA RATING BINTANG ===
+$('.star-item').on('click', function () {
+    var selectedValue = $(this).data('value');
 
-
-
-
-    // Fungsi untuk menampilkan overlay
-    function showOverlay() {
-        $(".overlay").fadeIn();
+    // Mapping angka ke teks rating
+    var ratingText = "";
+    switch (selectedValue) {
+        case 1: ratingText = "Sangat Tidak Puas"; break;
+        case 2: ratingText = "Tidak Puas"; break;
+        case 3: ratingText = "Cukup Puas"; break;
+        case 4: ratingText = "Puas"; break;
+        case 5: ratingText = "Sangat Puas"; break;
     }
 
+    // Set ke hidden input dan result
+    $('#ratingValue').val(selectedValue);   // angka
+    $('#resultCSAT').val(ratingText);       // teks yang akan dikirim ke server
+    $('#ratingResult').text('Rating Anda: ' + ratingText);
 
-
-
-    // Fungsi untuk menyembunyikan overlay
-    function hideOverlay() {
-        $(".overlay").fadeOut();
-    }
-
-    function getParameterByName(name, url = window.location.href) {
-        name = name.replace(/[\[\]]/g, '\\$&');
-        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-            results = regex.exec(url);
-        if (!results) return null;
-        if (!results[2]) return '';
-        return decodeURIComponent(results[2].replace(/\+/g, ' '));
-    }
-
-    function csatInitiate(ticid, kanal) {
-        showOverlay();
-        let vTicketNumber = $("#ticketnumber").val();
-        let vChannel = $("#channelname").val();
-
-
-        var form_data = JSON.stringify({ TicketNumber: ticid, Channel: kanal });
-        $.ajax({
-            type: "POST",
-            url: "asmx/CsatService.asmx/ws_csat_initiate",
-            data: form_data,
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function (data) {
-                hideOverlay();
-                var json = JSON.parse(data.d);
-                var i, x, result = "";
-                console.log(json);
-                //if (json.length > 0) {
-                for (i = 0; i < json.length; i++) {
-                    console.log(json[i].UniqueID);
-                    $("#UniqueID").val(json[i].UniqueID);
-                    $("#channelname").val(kanal);
-                    $("#ticketnumber").val(json[i].TicketNumber);
-
-                    if (json[i].Result == "1")
-                        window.location = "multiple.html";
-                    
-
-                    //} else if(json[i].Result == "1"){
-                    //    window.location = "multiple.html";
-                    //} else if (json[i].Result == "2") {
-                    //    window.location = "expired.html";
-                    //}
-
-                }
-                // } else {
-                //  window.location = "Error.html";
-                //}
-
-
-
-            },
-            error: function (xmlHttpRequest, textStatus, errorThrown) {
-                hideOverlay();
-                console.log(xmlHttpRequest.responseText);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        })
-
-    }
-
-
-
-    $("#startProcess").click(function () {
-
-
-        let selectedRating = $("#ratingResult").html();
-        let description = selectedRating.split("-")[1].trim();
-       // alert(description);
-        console.log("POST CSAT");
-
-        let vUniqueID = $("#UniqueID").val();
-        //alert(vUniqueID);
-        let vTicketNumber = $("#ticketnumber").val();
-        let vChannel = $("#channelname").val();
-        let vResultCSAT = $("#resultCSAT").val();
-        let vIsiKeterangan = $("#comments").val();
-        let UserName = 'Admin';
-
-
-
-        if (vResultCSAT == null || vResultCSAT == "") {
-
-            Swal.fire({
-                title: '',
-                text: 'Mohon dapat mengisi terlebih dahulu form survey berikut',
-                icon: 'warning', // You can use 'success', 'error', 'info', 'question'
-
-            });
-            return false; // Prevent the form from submitting
+    // Pewarnaan bintang
+    $('.star-item').each(function () {
+        var starValue = $(this).data('value');
+        if (starValue <= selectedValue) {
+            $(this).find('i').css('color', '#FFD700'); // Kuning
+        } else {
+            $(this).find('i').css('color', '#ccc'); // Abu-abu
         }
-
-        if (vIsiKeterangan == null || vIsiKeterangan == "") {
-            Swal.fire({
-                title: '',
-                text: 'Mohon dapat mengisi terlebih dahulu form survey berikut	',
-                icon: 'warning', // You can use 'success', 'error', 'info', 'question'
-
-            });
-            return false; // Prevent the form from submitting
-
-        }
-        showOverlay();
-        var form_data = JSON.stringify({ UniqueID: vUniqueID, TicketNumber: vTicketNumber, Channel: vChannel, ResultCSAT: vResultCSAT, IsiKeterangan: vIsiKeterangan, UserName: UserName });
-        $.ajax({
-            type: "POST",
-            url: "asmx/CsatService.asmx/ws_csat_create",
-            //url: "../../apps/asmx/CsatService.asmx/ws_csat_create",
-            data: form_data,
-            contentType: "application/json; charset=utf-8",
-            dataType: "json",
-            success: function (data) {
-                hideOverlay();
-                var json = JSON.parse(data.d);
-                var i, x, result = "";
-                console.log(json);
-
-
-                if (json[0].Result == "0") {
-                    window.location = "selesai.html";
-                } else if (json[0].Result == "1") {
-                    window.location = "multiple.html";
-                } else if (json[0].Result == "2") {
-                    window.location = "expired.html";
-                }
-                window.location = "selesai.html";
-
-            },
-            error: function (xmlHttpRequest, textStatus, errorThrown) {
-                hideOverlay();
-                console.log(xmlHttpRequest.responseText);
-                console.log(textStatus);
-                console.log(errorThrown);
-            }
-        })
     });
 });
 
+
+
+        // === SUBMIT ===
+    $("#startProcess").click(function (event) {
+
+        event.preventDefault();
+            let selectedRating = $("#ratingResult").html();
+            let description = selectedRating.split("-")[1]?.trim() || "";
+
+            let vUniqueID = $("#UniqueID").val();
+            let vTicketNumber = $("#ticketnumber").val();
+            let vChannel = $("#channelname").val();
+            let vResultCSAT = $("#resultCSAT").val();
+
+            let vIsiKeterangan = $("#comments").val();
+            let UserName = 'Admin';
+
+            if (!vResultCSAT) {
+                Swal.fire({ text: 'Mohon isi form survey terlebih dahulu', icon: 'warning' });
+                return false;
+            }
+
+            if (!vIsiKeterangan) {
+                Swal.fire({ text: 'Mohon isi komentar terlebih dahulu', icon: 'warning' });
+                return false;
+            }
+
+            showOverlay();
+            var form_data = JSON.stringify({
+                UniqueID: vUniqueID,
+                TicketNumber: vTicketNumber,
+                Channel: vChannel,
+                ResultCSAT: vResultCSAT,
+                IsiKeterangan: vIsiKeterangan,
+                UserName: UserName
+            });
+
+            $.ajax({
+                type: "POST",
+                url: "asmx/CsatService.asmx/ws_csat_create",
+                data: form_data,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    hideOverlay();
+                    var json = JSON.parse(data.d);
+                    if (json[0].Result == "1") {
+                        window.location = "multiple.html";
+                    } else if (json[0].Result == "2") {
+                        window.location = "expired.html";
+                    } else {
+                        window.location = "selesai.html";
+                    }
+                },
+                error: function (xhr, status, err) {
+                    hideOverlay();
+                    console.log(xhr.responseText);
+                }
+            });
+        });
+
+        // === Fungsi bantu ===
+        function showOverlay() {
+            $(".overlay").fadeIn();
+        }
+
+        function hideOverlay() {
+            $(".overlay").fadeOut();
+        }
+
+        function getParameterByName(name, url = window.location.href) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+            var results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+
+        function csatInitiate(ticid, kanal) {
+            showOverlay();
+            var form_data = JSON.stringify({ TicketNumber: ticid, Channel: kanal });
+
+            $.ajax({
+                type: "POST",
+                url: "asmx/CsatService.asmx/ws_csat_initiate",
+                data: form_data,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                success: function (data) {
+                    hideOverlay();
+                    var json = JSON.parse(data.d);
+                    for (let i = 0; i < json.length; i++) {
+                        $("#UniqueID").val(json[i].UniqueID);
+                        $("#channelname").val(kanal);
+                        $("#ticketnumber").val(ticid);
+
+                        if (json[i].Result == "1")
+                            window.location = "multiple.html";
+                    }
+                },
+                error: function (xhr, status, err) {
+                    hideOverlay();
+                    console.log(xhr.responseText);
+                }
+            });
+        }
+    });

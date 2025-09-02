@@ -1,0 +1,3162 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+UIDESK
+</name>
+</assembly>
+<members>
+<member name="T:UIDESK.My.MyWebExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for Web projects.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:UIDESK.My.MyWebExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:UIDESK.My.MyWebExtension.User">
+ <summary>
+ Returns information for the current Web user.
+ </summary>
+</member>
+<member name="P:UIDESK.My.MyWebExtension.Request">
+ <summary>
+ Returns Request object.
+ </summary>
+</member>
+<member name="P:UIDESK.My.MyWebExtension.Response">
+ <summary>
+ Returns Response object.
+ </summary>
+</member>
+<member name="P:UIDESK.My.MyWebExtension.Log">
+ <summary>
+ Returns the Asp log object.
+ </summary>
+</member>
+<member name="T:UIDESK.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:UIDESK.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:UIDESK.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="F:UIDESK.Crm_Trm_Channel_Tenant._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_EmailNotifOverSLA._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Export._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Export._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Export._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Export._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Export._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Export._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Export._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Export._tempTrxStaff">
+<summary>
+tempTrxStaff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Jenis_SBM._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Master_Email_Tenant._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Report_File._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Report_File._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Report_File._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Report_File._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Report_File._ds_source">
+<summary>
+ds_source control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Report_Setting._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_spbu._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Subject_Sitika._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Ticket_Export._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Ticket_Export._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Ticket_Export._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Ticket_Export._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Ticket_Export._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Ticket_Export._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Ticket_Export._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Ticket_Export._TempBaseTrx">
+<summary>
+TempBaseTrx control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_LDAP._Txt_Server">
+<summary>
+Txt_Server control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_LDAP._Txt_User">
+<summary>
+Txt_User control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_LDAP._Txt_Password">
+<summary>
+Txt_Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_LDAP._lblhasil">
+<summary>
+lblhasil control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_LDAP._BTN_Submit1">
+<summary>
+BTN_Submit1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_LDAP._BTN_Submit2">
+<summary>
+BTN_Submit2 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_NotificationTemplate._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_NotificationTemplate._NotifTenantID">
+<summary>
+NotifTenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Vendor._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Vendor._TrxCustomerID">
+<summary>
+TrxCustomerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Vendor._Hd_Site">
+<summary>
+Hd_Site control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Vendor._CustomerID">
+<summary>
+CustomerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TenantMst._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TenantMst._TrxAgentId">
+<summary>
+TrxAgentId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TenantMst._TenantID">
+<summary>
+TenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportCSAT._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportCSAT._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportCSAT._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportCSAT._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportCSAT._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportCSAT._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportCSAT._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportCSAT._tempTrxSLA">
+<summary>
+tempTrxSLA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportRawDinamisHeader._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ReportRawDinamisHeader._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Report_CSAT._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Report_CSAT._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Report_CSAT._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Report_CSAT._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Report_CSAT._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Report_CSAT._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Report_CSAT._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Report_CSAT._tempTrxSLA">
+<summary>
+tempTrxSLA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Tele_TrxUpload._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Tele_TrxUpload._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Tele_TrxUpload._XtraUpload">
+<summary>
+XtraUpload control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSummaryTransaction._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSummaryTransaction._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSummaryTransaction._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSummaryTransaction._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSummaryTransaction._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSummaryTransaction._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSummaryTransaction._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSummaryTransaction._TempBaseTrx">
+<summary>
+TempBaseTrx control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.auth_local._Login_Username">
+<summary>
+Login_Username control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.auth_local._Login_Password">
+<summary>
+Login_Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.auth_local._Login_ButtonSubmit">
+<summary>
+Login_ButtonSubmit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_LevelUser._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_1._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_2._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_3._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Account_Email._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Account_SM._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Aux_Reason._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category._Hd_TenantID">
+<summary>
+Hd_TenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category._Hd_MainCategoryID">
+<summary>
+Hd_MainCategoryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Detail._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Detail._Hd_CmbTenantID">
+<summary>
+Hd_CmbTenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Detail._Hd_MainCategoryID">
+<summary>
+Hd_MainCategoryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Detail._Hd_CmbCategory">
+<summary>
+Hd_CmbCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Detail._Hd_CmbCategoryType">
+<summary>
+Hd_CmbCategoryType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Detail._Hd_Status">
+<summary>
+Hd_Status control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._Hd_CmbTenantID">
+<summary>
+Hd_CmbTenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._Hd_MainCategoryID">
+<summary>
+Hd_MainCategoryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._Hd_CmbCategory">
+<summary>
+Hd_CmbCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._Hd_CmbCategoryType">
+<summary>
+Hd_CmbCategoryType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._Hd_CmbCategoryDetail">
+<summary>
+Hd_CmbCategoryDetail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._Hd_EscalationUnit">
+<summary>
+Hd_EscalationUnit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._Hd_Status">
+<summary>
+Hd_Status control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Reason._Hd_ComboLayer">
+<summary>
+Hd_ComboLayer control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Type._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Type._Hd_CmbTenantID">
+<summary>
+Hd_CmbTenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Type._Hd_MainCategoryID">
+<summary>
+Hd_MainCategoryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Type._Hd_CmbCategory">
+<summary>
+Hd_CmbCategory control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Category_Type._Hd_Status">
+<summary>
+Hd_Status control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Channel._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer._TrxCustomerID">
+<summary>
+TrxCustomerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer._Hd_Site">
+<summary>
+Hd_Site control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer._CustomerID">
+<summary>
+CustomerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer._AccesID">
+<summary>
+AccesID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer._DeleteID">
+<summary>
+DeleteID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Category._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Category._Hd_Status">
+<summary>
+Hd_Status control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Customer_Type._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Department._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Department._Hd_Status">
+<summary>
+Hd_Status control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Department._Hd_TenantID">
+<summary>
+Hd_TenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Epic_System._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Epic_System._Hd_Site">
+<summary>
+Hd_Site control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_ExportUser._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_ExportUser._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_ExportUser._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_ExportUser._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_ExportUser._XtraUser">
+<summary>
+XtraUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Group_Agent._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Handle._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_HistoryEmail._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_HistoryTicket._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Holidays._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_KnowledgeBase._fileManager">
+<summary>
+fileManager control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_License._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Main_Category._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Modul._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Modul._Hd_Site">
+<summary>
+Hd_Site control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Modul_Detail._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Monitoring._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Monitoring._Hd_Site">
+<summary>
+Hd_Site control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Monitoring._MonitoringTenantID">
+<summary>
+MonitoringTenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Monitoring._MonitoringCaseOwnerID">
+<summary>
+MonitoringCaseOwnerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Nomor_WhatsApp._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Nomor_WhatsApp._Hd_Site">
+<summary>
+Hd_Site control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Notification._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Notification._TrxDepartmentID">
+<summary>
+TrxDepartmentID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Notification._TrxVendorID">
+<summary>
+TrxVendorID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Notification._HdTicketCreate">
+<summary>
+HdTicketCreate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Notification._HdTicketOverSLA">
+<summary>
+HdTicketOverSLA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Notification._HdTicketClosed">
+<summary>
+HdTicketClosed control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Notification._HdTicketEscalation">
+<summary>
+HdTicketEscalation control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Operasional_Hour._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Priority._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Product_Name._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Product_Type._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Reason_Call._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Reason_Call_Param._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_ScriptGreeting._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Signature._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Site._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Status_Call._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Status_Ticket._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Status_User._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Template_AutoReply._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_Template_EmailResponse._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Add._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Add._HDEmail">
+<summary>
+HDEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Add._HDWA">
+<summary>
+HDWA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Add._HDInbound">
+<summary>
+HDInbound control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Add._HDOutbound">
+<summary>
+HDOutbound control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Add._HDInstagram">
+<summary>
+HDInstagram control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Add._HDFacebook">
+<summary>
+HDFacebook control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Add._HDTwitter">
+<summary>
+HDTwitter control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trm_User_Management._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_Email._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_Email._TrxAgentId">
+<summary>
+TrxAgentId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_Email._HDAgent_Checkbox">
+<summary>
+HDAgent_Checkbox control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_Inbound._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_Product_Campaign._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_Product_Campaign._HDAgent_Checkbox">
+<summary>
+HDAgent_Checkbox control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_SM._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_SM._TrxAgentId">
+<summary>
+TrxAgentId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_SM._TrxUserAgentId">
+<summary>
+TrxUserAgentId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_SM._TrxTransaksiID">
+<summary>
+TrxTransaksiID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_SM._HDAgent_Checkbox">
+<summary>
+HDAgent_Checkbox control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Agent_WhatsApp._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_AutoReply._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Case_Owner._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Case_Owner._TrxAgentId">
+<summary>
+TrxAgentId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Direct._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._TrxUserName">
+<summary>
+TrxUserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._TrxEmailID">
+<summary>
+TrxEmailID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._TrxGenerateEmailID">
+<summary>
+TrxGenerateEmailID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._Hd_StartDate">
+<summary>
+Hd_StartDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._Hd_FinishDate">
+<summary>
+Hd_FinishDate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._DraftID">
+<summary>
+DraftID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._HDSignature">
+<summary>
+HDSignature control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_MailSystem._HdForward_From">
+<summary>
+HdForward_From control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Setting_Channel._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Taskboard._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Taskboard._TrxUserName">
+<summary>
+TrxUserName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Taskboard._TrxLevelUser">
+<summary>
+TrxLevelUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Taskboard._TrxTelepon">
+<summary>
+TrxTelepon control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Thread._TrxUnitKerja">
+<summary>
+TrxUnitKerja control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Thread._TrxLevelUser">
+<summary>
+TrxLevelUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Thread._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Thread._TrxType">
+<summary>
+TrxType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._CustomerID">
+<summary>
+CustomerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._TrxCustomerID">
+<summary>
+TrxCustomerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._TrxNumberID">
+<summary>
+TrxNumberID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._TrxThreadID">
+<summary>
+TrxThreadID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._TrxChannel">
+<summary>
+TrxChannel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._TrxTicketNumber">
+<summary>
+TrxTicketNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._TrxStatus">
+<summary>
+TrxStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._HD_API_Gender">
+<summary>
+HD_API_Gender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._HD_API_NomorPolis">
+<summary>
+HD_API_NomorPolis control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._hd_Layer">
+<summary>
+hd_Layer control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._TenantID">
+<summary>
+TenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._AccesID">
+<summary>
+AccesID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_Ticket._HD135_AccountID">
+<summary>
+HD135_AccountID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._TrxCustomerID">
+<summary>
+TrxCustomerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._TrxNumberID">
+<summary>
+TrxNumberID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._TrxThreadID">
+<summary>
+TrxThreadID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._TrxChannel">
+<summary>
+TrxChannel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._TrxTicketNumber">
+<summary>
+TrxTicketNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._TrxStatus">
+<summary>
+TrxStatus control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._HD_API_Gender">
+<summary>
+HD_API_Gender control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._HD_API_NomorPolis">
+<summary>
+HD_API_NomorPolis control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._hd_Layer">
+<summary>
+hd_Layer control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._hd_EskalasiDepartment">
+<summary>
+hd_EskalasiDepartment control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._InteractionTenantID">
+<summary>
+InteractionTenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._ParentNumberID">
+<summary>
+ParentNumberID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._Journey_MainCategoryID">
+<summary>
+Journey_MainCategoryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._Journey_CmbCategoryID">
+<summary>
+Journey_CmbCategoryID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._Journey_CmbCategoryTypeID">
+<summary>
+Journey_CmbCategoryTypeID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._Journey_CmbCategoryDetailID">
+<summary>
+Journey_CmbCategoryDetailID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_TicketJourney._OwnerTicketCO">
+<summary>
+OwnerTicketCO control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_User_Tenant._TrxID">
+<summary>
+TrxID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_User_Tenant._TrxAgentId">
+<summary>
+TrxAgentId control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Crm_Trx_User_Tenant._TenantID">
+<summary>
+TenantID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._aspxLiteral">
+<summary>
+aspxLiteral control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._form1">
+<summary>
+form1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._ContentPlaceHolder1">
+<summary>
+ContentPlaceHolder1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_TicketNumber">
+<summary>
+hd_TicketNumber control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_EscalationIdentity">
+<summary>
+hd_EscalationIdentity control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_EscalationTo">
+<summary>
+hd_EscalationTo control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_sessionLogin">
+<summary>
+hd_sessionLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._TrxLoginTypeAngka">
+<summary>
+TrxLoginTypeAngka control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._TrxLayerUser">
+<summary>
+TrxLayerUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._TrxDivisi">
+<summary>
+TrxDivisi control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_customerID">
+<summary>
+hd_customerID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_OtherSystem">
+<summary>
+hd_OtherSystem control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_ThreadSystem">
+<summary>
+hd_ThreadSystem control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_AccountChannelUser">
+<summary>
+hd_AccountChannelUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_AccountContactUser">
+<summary>
+hd_AccountContactUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_SLA">
+<summary>
+hd_SLA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_Journey_EscalationType">
+<summary>
+hd_Journey_EscalationType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_Journey_EscalationValue">
+<summary>
+hd_Journey_EscalationValue control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._HiddenField3">
+<summary>
+HiddenField3 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._HiddenField4">
+<summary>
+HiddenField4 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_NameKaryawan">
+<summary>
+hd_NameKaryawan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_LevelUser">
+<summary>
+hd_LevelUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_EmailUserLogin">
+<summary>
+hd_EmailUserLogin control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._SM_AccountToken">
+<summary>
+SM_AccountToken control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._SM_AccountID">
+<summary>
+SM_AccountID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._SM_AccountName">
+<summary>
+SM_AccountName control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._SM_AccountURL">
+<summary>
+SM_AccountURL control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._SM_Webhook">
+<summary>
+SM_Webhook control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._SM_MultiChatToken">
+<summary>
+SM_MultiChatToken control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._SM_UrlDatakelola">
+<summary>
+SM_UrlDatakelola control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._SM_CompanyToken">
+<summary>
+SM_CompanyToken control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._HD_CookiesVariabel">
+<summary>
+HD_CookiesVariabel control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._hd_SIP">
+<summary>
+hd_SIP control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._HD_UserType">
+<summary>
+HD_UserType control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._QM_LevelUser">
+<summary>
+QM_LevelUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._QM_GroupQA">
+<summary>
+QM_GroupQA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._QM_GroupAgent">
+<summary>
+QM_GroupAgent control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._QM_TypeCall">
+<summary>
+QM_TypeCall control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._QM_GroupLayanan">
+<summary>
+QM_GroupLayanan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._QM_TeamLayanan">
+<summary>
+QM_TeamLayanan control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._HD_ObjectTicketDinamis">
+<summary>
+HD_ObjectTicketDinamis control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._HD_ObjectTicketDinamis_Flag">
+<summary>
+HD_ObjectTicketDinamis_Flag control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Uidesk._TenantUser">
+<summary>
+TenantUser control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportAUX._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportAUX._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportAUX._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportAUX._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportAUX._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportAUX._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportAUX._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportAUX._TempBaseAUX">
+<summary>
+TempBaseAUX control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportInteractionTicket._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportInteractionTicket._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportInteractionTicket._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportInteractionTicket._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportInteractionTicket._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportInteractionTicket._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportInteractionTicket._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportInteractionTicket._tempTrxInteraction">
+<summary>
+tempTrxInteraction control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSLATicket._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSLATicket._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSLATicket._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSLATicket._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSLATicket._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSLATicket._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSLATicket._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportSLATicket._tempTrxSLA">
+<summary>
+tempTrxSLA control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportStafTicket._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportStafTicket._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportStafTicket._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportStafTicket._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportStafTicket._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportStafTicket._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportStafTicket._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportStafTicket._tempTrxStaff">
+<summary>
+tempTrxStaff control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportThreadTicket._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportThreadTicket._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportThreadTicket._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportThreadTicket._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportThreadTicket._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportThreadTicket._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportThreadTicket._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportThreadTicket._tempTrxThread">
+<summary>
+tempTrxThread control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransactionTicket._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransactionTicket._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransactionTicket._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransactionTicket._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransactionTicket._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransactionTicket._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransactionTicket._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransactionTicket._TempBaseTrx">
+<summary>
+TempBaseTrx control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransaksiEmail._dt_strdate">
+<summary>
+dt_strdate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransaksiEmail._dt_endate">
+<summary>
+dt_endate control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransaksiEmail._btn_Submit">
+<summary>
+btn_Submit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransaksiEmail._ASPxGridView1">
+<summary>
+ASPxGridView1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransaksiEmail._ddList">
+<summary>
+ddList control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransaksiEmail._btn_Export">
+<summary>
+btn_Export control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransaksiEmail._ASPxGridViewExporter1">
+<summary>
+ASPxGridViewExporter1 control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.Xtra_ReportTransaksiEmail._tempTrxEmail">
+<summary>
+tempTrxEmail control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.auth_login._Login_Username">
+<summary>
+Login_Username control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.auth_login._Login_Password">
+<summary>
+Login_Password control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.auth_login._Login_ButtonSubmit">
+<summary>
+Login_ButtonSubmit control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ProfileCustomer._ProfileAccesID">
+<summary>
+ProfileAccesID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+<member name="F:UIDESK.ProfileCustomer._ProfileID">
+<summary>
+ProfileID control.
+</summary>
+<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member>
+</members>
+</doc>

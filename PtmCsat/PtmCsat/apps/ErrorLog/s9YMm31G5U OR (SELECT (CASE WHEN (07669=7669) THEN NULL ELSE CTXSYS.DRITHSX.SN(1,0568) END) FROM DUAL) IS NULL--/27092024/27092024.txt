@@ -1,0 +1,5 @@
+Time: 27/09/2024 08:29:52:379 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT 's9YMm31G5U OR (SELECT (CASE WHEN (07669=7669) THEN NULL ELSE CTXSYS.DRITHSX.SN(1,0568) END) FROM DUAL) IS NULL--', '20240906022305354', 'Email', ''
+---------------------------Success-------------------------------------------------------
+

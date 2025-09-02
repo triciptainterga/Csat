@@ -1,4 +1,6 @@
-﻿Imports System.Web.Optimization
+﻿Imports System.Net
+Imports System.Web.Optimization
+
 
 Public Class Global_asax
     Inherits HttpApplication
@@ -7,5 +9,6 @@ Public Class Global_asax
         ' Fires when the application is started
         RouteConfig.RegisterRoutes(RouteTable.Routes)
         BundleConfig.RegisterBundles(BundleTable.Bundles)
+		  ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12
     End Sub
 End Class

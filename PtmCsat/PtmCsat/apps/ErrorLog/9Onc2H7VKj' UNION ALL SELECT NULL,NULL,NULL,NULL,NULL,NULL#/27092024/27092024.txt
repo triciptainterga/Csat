@@ -1,0 +1,10 @@
+Time: 27/09/2024 01:41:38:971 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT '9Onc2H7VKj' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#', '20240906022305353', 'Email', 'Satisfied'
+---------------------------Success-------------------------------------------------------
+
+Time: 27/09/2024 01:46:52:786 PM
+---------------------------Success-------------------------------------------------------
+Message: Exec SP_TempTrxCSAT '9Onc2H7VKj' UNION ALL SELECT NULL,NULL,NULL,NULL,NULL,NULL#', '20240906022305353', 'Email', 'Satisfied'
+---------------------------Success-------------------------------------------------------
+
